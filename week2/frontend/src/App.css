@@ -1,0 +1,85 @@
+/* General styling for the application */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar custom styling */
+.navbar {
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* News card container spacing */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;  /* Centers the container */
+}
+
+/* Card styling */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;  /* Adds space between cards */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card body padding */
+.card-body {
+  padding: 1.25rem;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Navbar brand customization */
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.navbar-brand:hover {
+  color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    padding: 1rem;  /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust card layout for very small screens */
+  .card {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 15px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.25rem; /* Smaller font size on small screens */
+  }
+}
